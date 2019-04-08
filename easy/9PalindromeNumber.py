@@ -5,11 +5,6 @@ class Solution:
         if x<10:
             return True
         x=str(x)
-        size=len(x)
-
-        if x[0:int(size/2)]==x[-int(size/2):][::-1]:
+        if x[:]==x[::-1]:
             return True
-
-
         return False
-        
